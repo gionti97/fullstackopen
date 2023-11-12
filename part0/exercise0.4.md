@@ -2,6 +2,7 @@
 
 This is what happens when a user visits the page `https://studies.cs.helsinki.fi/exampleapp/notes` and clicks on the `save` button:
 
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -18,3 +19,4 @@ sequenceDiagram
     server->>browser: JavaScript File
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     server->>browser: JSON Document
+```
