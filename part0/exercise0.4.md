@@ -10,7 +10,7 @@ sequenceDiagram
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     Note right of browser: The browser sends a POST request with payload = {note: userInput}
-    server->>browser: HTML Document
+    server->>browser: HTTP Redirect
     deactivate server
     Note left of server: The server response is 302: the server wants the browser to make a new GET request according to the response header's location "/exampleapp/notes"
 
